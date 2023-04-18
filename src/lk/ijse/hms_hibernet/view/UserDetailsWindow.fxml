@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="488.0" prefWidth="938.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms_hibernet.controller.UserDetailsWindowController">
+   <children>
+      <Pane prefHeight="26.0" prefWidth="938.0" style="-fx-background-color: #EBEBEB;">
+         <children>
+            <JFXButton fx:id="btnClose" alignment="CENTER" layoutX="902.0" onAction="#btnCloseOnAction" prefHeight="18.0" prefWidth="35.0" styleClass="button_close" stylesheets="@../assets/css/Button.css" text="X" textAlignment="CENTER" textFill="#a6a6a6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="22.0" layoutY="5.0" text="User Details">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnMinimize" alignment="CENTER" layoutX="867.0" layoutY="1.0" onAction="#btnMinimizeOnAction" prefHeight="18.0" prefWidth="35.0" styleClass="button_minimize" stylesheets="@../assets/css/Button.css" text="-" textAlignment="CENTER" textFill="#a6a6a6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="30.0" layoutY="38.0" text="User Login Details" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="142.0" layoutY="48.0" prefHeight="3.0" prefWidth="795.0" />
+      <Separator layoutY="48.0" prefHeight="3.0" prefWidth="28.0" />
+      <TextField fx:id="txtUsername" layoutX="65.0" layoutY="149.0" prefWidth="215.0" promptText="Username" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblE_username" layoutX="67.0" layoutY="126.0" text="Enter New Username">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblE_password" layoutX="545.0" layoutY="176.0" text="Enter New Password">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="272.0" text="User Details" textFill="#726f6f">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="111.0" layoutY="282.0" prefHeight="3.0" prefWidth="827.0" />
+      <Separator layoutY="282.0" prefHeight="3.0" prefWidth="28.0" />
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" graphicTextGap="6.0" layoutX="735.0" layoutY="244.0" onAction="#btnUpdateOnAction" styleClass="button_save2" stylesheets="@../assets/css/Button.css" text="Update">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="SAVE" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblUsername" layoutX="72.0" layoutY="88.0" prefHeight="22.0" prefWidth="245.0" text="Tharindu102" textFill="#3d1086">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="63.0" text="Username">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPass_Labal" editable="false" layoutX="545.0" layoutY="84.0" prefWidth="215.0" styleClass="Text-Field" stylesheets="@../assets/css/TextFeilds.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="545.0" layoutY="63.0" text="Password">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNewPassword" layoutX="546.0" layoutY="197.0" onKeyReleased="#txtNewPasswordOnAction" prefWidth="215.0" promptText="Password" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="ptxtNewPassword" layoutX="546.0" layoutY="197.0" onKeyReleased="#ptxtNewPasswordOnAction" prefWidth="215.0" promptText="Password" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="btnVisible" contentDisplay="GRAPHIC_ONLY" layoutX="779.0" layoutY="198.0" onAction="#btnVisibleOnAction" prefHeight="25.0" prefWidth="24.0">
+         <graphic>
+            <FontAwesomeIconView fill="#131834" glyphName="EYE" wrappingWidth="14.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSetHidden" contentDisplay="GRAPHIC_ONLY" layoutX="779.0" layoutY="198.0" onAction="#btnSetHiddenOnAction" prefHeight="24.0" prefWidth="18.0">
+         <graphic>
+            <FontAwesomeIconView fill="#131834" glyphName="EYE_SLASH">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" graphicTextGap="6.0" layoutX="826.0" layoutY="244.0" onAction="#btnCancelOnAction" prefHeight="30.0" prefWidth="78.0" styleClass="button_cancel" stylesheets="@../assets/css/Button.css" text="Cancel">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane layoutX="77.0" layoutY="298.0" prefHeight="82.0" prefWidth="779.0" styleClass="pane_10" stylesheets="@../assets/css/Pane.css">
+         <children>
+            <Pane layoutY="41.0" prefHeight="32.0" prefWidth="779.0" stylesheets="@../assets/css/Pane.css">
+               <children>
+                  <Label fx:id="lblUsername2" layoutX="65.0" layoutY="7.0" text="Useraname" textFill="#2d0e9a">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="lblName" fill="#2d0e9a" fontSmoothingType="LCD" layoutX="216.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="260.0000042915344">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblPhoneNumber" fill="#2d0e9a" fontSmoothingType="LCD" layoutX="504.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number" textAlignment="CENTER" wrappingWidth="215.00000429153442">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="32.0" prefWidth="779.0" styleClass="pane_9" stylesheets="@../assets/css/Pane.css">
+               <children>
+                  <Label layoutX="65.0" layoutY="7.0" text="Username">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="329.0" layoutY="7.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="570.0" layoutY="7.0" text="Phone Number">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <JFXCheckBox fx:id="chkBoxUsername" layoutX="317.0" layoutY="250.0" onAction="#chkBoxUsernameOnAction" text="Update Username" />
+      <JFXCheckBox fx:id="chkBoxPassword" layoutX="449.0" layoutY="250.0" onAction="#chkBoxPasswordOnAction" text="Update Password" />
+      <Label fx:id="lblE_Oldpassword" layoutX="545.0" layoutY="121.0" text="Enter Password">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOldPassword" layoutX="546.0" layoutY="142.0" onKeyReleased="#txtOldPasswordOnAction" prefWidth="215.0" promptText="Old Password" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="ptxtOldPassword" layoutX="546.0" layoutY="142.0" onKeyReleased="#ptxtOldPasswordOnAction" prefWidth="215.0" promptText="Old Password" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

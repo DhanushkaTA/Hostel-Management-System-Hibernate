@@ -1,0 +1,52 @@
+.button_Search{
+    -fx-background-color: #272C39;
+    -fx-border-color: WHITE;
+    -fx-text-fill : #ffff;
+    -fx-background-radius: 15px 15px 15px 15px;
+    -fx-border-radius: 15px 15px 15px 15px;
+
+}
+
+.button_Search_ho:hover{
+    -fx-background-color: #FFE335;
+    -fx-text-fill: #272C39;
+}
+
+.colored-card{
+    -fx-background-color: linear-gradient(to left,#1A3384,#2B49B3);
+    -fx-background-radius: 10px  10px  10px  10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.colored-card_ho:hover{
+    -fx-background-color: linear-gradient(to right,#2B49B3,#1A3384);
+    -fx-background-radius: 10px  10px  10px  10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.button_atw{
+    -fx-background-color: linear-gradient(to left,#E65100,#FB8C00);
+    -fx-background-radius: 10px  10px  10px  10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-text-fill : white;
+}
+
+.button_atw:hover{
+    -fx-background-color: linear-gradient(to right,#E65100,#FB8C00);
+    //-fx-border-width: 318;
+    -fx-background-size: 100px 100px 100px 100px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-text-fill :white;
+
+}
+
+.text{
+    -fx-text-fill :linear-gradient(to right,#131834,#01A3B5,#01D7E2);
+    /*-fx-font-family: Josefin Sans ExtraLight;*/
+    /*-fx-font-size: 54px;*/
+}
+
+.l{
+    -fx-graphic: 60px;
+}

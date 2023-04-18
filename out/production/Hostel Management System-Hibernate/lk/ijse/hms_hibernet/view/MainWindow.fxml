@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="577.0" prefWidth="1161.0" style="-fx-background-color: #D2D2D2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms_hibernet.controller.MainWindowController">
+   <children>
+      <Pane layoutX="999.0" prefHeight="577.0" prefWidth="162.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="btnStuMan" buttonType="RAISED" contentDisplay="TOP" layoutX="27.0" layoutY="5.0" minHeight="156.0" minWidth="65.0" onAction="#btnStuManOnAction" snapToPixel="false" styleClass="main" stylesheets="@../assets/css/Button.css" text="Student Manager">
+               <graphic>
+                  <ImageView fx:id="imgStudent" fitHeight="156.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/Student_Manager.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRoomRes" buttonType="RAISED" contentDisplay="TOP" layoutX="27.0" layoutY="196.0" minHeight="156.0" minWidth="65.0" onAction="#btnRoomResOnAction" snapToPixel="false" styleClass="main" stylesheets="@../assets/css/Button.css" text="Room Reservation">
+               <graphic>
+                  <ImageView fx:id="imgRes" fitHeight="156.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/Room_Reservation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRoomMan" buttonType="RAISED" contentDisplay="TOP" layoutX="27.0" layoutY="387.0" minHeight="156.0" minWidth="65.0" onAction="#btnRoomManOnAction" snapToPixel="false" styleClass="main" stylesheets="@../assets/css/Button.css" text="  Room  Manager">
+               <graphic>
+                  <ImageView fx:id="imgRoom" fitHeight="156.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/Room_Manager.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane prefHeight="38.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutX="29.0" layoutY="4.0" onAction="#btnDashboardOnAction" prefHeight="32.0" prefWidth="114.0" styleClass="button_save" stylesheets="@../assets/css/Button.css" text="Dashboard">
+               <graphic>
+                  <FontAwesomeIconView fill="#391717" glyphName="WINDOWS" size="13" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRes_stu" layoutX="151.0" layoutY="4.0" onAction="#btnRes_stuOnAction" prefHeight="32.0" prefWidth="162.0" styleClass="button_save" stylesheets="@../assets/css/Button.css" text="Remaining Payment">
+               <graphic>
+                  <FontAwesomeIconView fill="#391717" glyphName="DOLLAR" size="13" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnR_ReservedStu" layoutX="325.0" layoutY="5.0" onAction="#btnR_ReservedStuOnAction" prefHeight="32.0" prefWidth="175.0" styleClass="button_save" stylesheets="@../assets/css/Button.css" text="Room Reservced Student">
+               <graphic>
+                  <FontAwesomeIconView fill="#391717" glyphName="WINDOWS" size="13" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="pneContainer" layoutY="39.0" prefHeight="539.0" prefWidth="1000.0">
+         <children>
+            <Pane layoutX="9.0" layoutY="33.0" prefHeight="211.0" prefWidth="977.0" styleClass="pane_10" stylesheets="@../assets/css/Pane.css">
+               <children>
+                  <Pane layoutY="53.0" prefHeight="32.0" prefWidth="977.0" stylesheets="@../assets/css/Pane.css">
+                     <children>
+                        <Label layoutX="65.0" layoutY="7.0" text="Room ID">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="7.0" text="Room Type">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="456.0" layoutY="7.0" text="Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="641.0" layoutY="7.0" text="Avilable Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="848.0" layoutY="6.0" text="Key Money">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="94.0" prefHeight="32.0" prefWidth="977.0" stylesheets="@../assets/css/Pane.css">
+                     <children>
+                        <Label layoutX="65.0" layoutY="7.0" text="Room ID">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="7.0" text="Room Type">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="456.0" layoutY="7.0" text="Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="641.0" layoutY="7.0" text="Avilable Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="848.0" layoutY="6.0" text="Key Money">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="134.0" prefHeight="32.0" prefWidth="977.0" stylesheets="@../assets/css/Pane.css">
+                     <children>
+                        <Label layoutX="65.0" layoutY="7.0" text="Room ID">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="7.0" text="Room Type">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="456.0" layoutY="7.0" text="Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="641.0" layoutY="7.0" text="Avilable Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="848.0" layoutY="6.0" text="Key Money">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="1.0" layoutY="175.0" prefHeight="32.0" prefWidth="977.0" stylesheets="@../assets/css/Pane.css">
+                     <children>
+                        <Label layoutX="65.0" layoutY="7.0" text="Room ID">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="7.0" text="Room Type">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="456.0" layoutY="7.0" text="Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="641.0" layoutY="7.0" text="Avilable Room Qty">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="848.0" layoutY="6.0" text="Key Money">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="33.0" prefHeight="32.0" prefWidth="977.0" styleClass="pane_9" stylesheets="@../assets/css/Pane.css">
+               <children>
+                  <Label layoutX="65.0" layoutY="7.0" text="Room ID">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="246.0" layoutY="7.0" text="Room Type">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="456.0" layoutY="7.0" text="Room Qty">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="641.0" layoutY="7.0" text="Avilable Room Qty">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="848.0" layoutY="6.0" text="Key Money">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pneContext" layoutX="-1.0" layoutY="38.0" prefHeight="539.0" prefWidth="1000.0" />
+   </children>
+</AnchorPane>

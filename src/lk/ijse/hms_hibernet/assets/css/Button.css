@@ -1,0 +1,186 @@
+.button_reset{
+    -fx-background-color: WHITE;
+    -fx-text-fill: #272C39;
+    -fx-shadow-highlight-color:#FFE335;
+}
+
+.button_save{
+    -fx-background-color: white;
+    /*-fx-border-color: #FFE335;*/
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #272C39;
+}
+
+.button_save:hover{
+    -fx-background-color: #FFE335;
+    -fx-border-color: #FFE335;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #272C39;
+}
+
+.button_cancel{
+    -fx-background-color: #ffff;
+    -fx-border-color: WHITE;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #272C39;
+}
+
+.button_cancel:hover{
+    -fx-background-color: #FF1028;
+    -fx-border-color: WHITE;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #ffff;
+}
+
+.button_atw{
+    -fx-background-color: linear-gradient(to left,#1A3384,#2B49B3);
+    -fx-background-radius: 10px  10px  10px  10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.button_Delete{
+    -fx-background-color: #272C39;
+    -fx-border-color: #272C39;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button_close:hover{
+    -fx-background-color: #FF1028;
+    -fx-text-fill: #ffff;
+}
+
+.button_minimize:hover{
+    -fx-background-color: #477FBA;
+    -fx-text-fill: #ffff;
+}
+
+.button_add{
+    -fx-background-color: #05D200;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button_add:hover{
+    -fx-background-color: #05D200;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-radius: 20px 20px 20px 20px;
+}
+
+.button_order2{
+    -fx-background-color: linear-gradient(to right,#01B9FF,#297EFF,#4356FF,#543EFF,#6821FF);
+    /*-fx-border-color: #272C39;*/
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button_order2:hover{
+    -fx-background-color: linear-gradient(to left,#01B9FF,#297EFF,#4356FF,#543EFF,#6821FF);
+    /*-fx-border-color: #272C39;*/
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.button_order{
+    -fx-background-color: #4356FF;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button_order:hover{
+    -fx-background-color: white;
+    -fx-border-color: #4356FF;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #4356FF;
+    -fx-cursor: hand;
+}
+
+.button_pass{
+    -fx-background-color: #272C39;
+    -fx-border-color: #272C39;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: White;
+}
+
+.button_pass:hover{
+    -fx-background-color: #FFE335;
+    -fx-border-color: #272C39;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #272C39;
+}
+
+.button_Remove{
+    -fx-background-color: #FF1744;
+    -fx-border-color: #FF1744;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #ffff;
+}
+
+.button_Remove:hover{
+    -fx-background-color: #FF6998;
+    -fx-border-color: #FF1744;
+    -fx-text-fill: #272C39;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-radius: 20px 20px 20px 20px;
+}
+
+.main{
+    -fx-text-fill: #131834;
+    -fx-font-style: bolde;
+}
+
+.main:hover{
+    -fx-rotate: 10px;
+}
+
+
+.button_book{
+    -fx-background-color: #FFE335;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #272C39;
+}
+
+.button_book:hover{
+    -fx-background-color: #FF3D00;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: white;
+    -fx-background-size: 50px 50px 50px 50px;
+}
+
+.button_save2{
+    -fx-background-color: #FFE335;
+    -fx-border-color: #FFE335;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: #272C39;
+}
+
+.button_save2:hover{
+    -fx-background-color: #FFE335;
+    -fx-border-color: #272C39;
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-text-fill: white;
+}

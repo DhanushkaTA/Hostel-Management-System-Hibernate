@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="context" prefHeight="539.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms_hibernet.controller.ReservationMakeStudentWindowController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="951.0" layoutX="22.0" layoutY="22.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/Background.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblStudent" layoutX="22.0" layoutY="14.0" prefHeight="477.0" prefWidth="951.0" stylesheets="@../assets/css/Table.css">
+         <columns>
+            <TableColumn fx:id="clmStudentId" prefWidth="107.0" text="Student ID" />
+            <TableColumn fx:id="clmF_name" prefWidth="142.0" text="First name" />
+            <TableColumn fx:id="clmL_name" prefWidth="136.0" text="Last Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="201.0" text="Address" />
+            <TableColumn fx:id="clmPhone" prefWidth="169.0" text="Phone Number" />
+            <TableColumn fx:id="clmDob" prefWidth="112.0" text="Dob" />
+            <TableColumn fx:id="clmGender" prefWidth="83.0" text="Gender" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

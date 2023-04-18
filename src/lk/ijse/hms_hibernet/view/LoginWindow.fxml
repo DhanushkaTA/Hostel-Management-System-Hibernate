@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="606.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms_hibernet.controller.LoginWindowController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="1010.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/Login_Window_1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="43.0" prefHeight="375.0" prefWidth="404.0" style="-fx-background-color: white;" />
+      <Label layoutX="505.0" layoutY="14.0" prefHeight="183.0" prefWidth="170.0" style="-fx-background-color: white;" />
+      <Label layoutX="675.0" layoutY="124.0" prefHeight="73.0" prefWidth="170.0" style="-fx-background-color: white;" />
+      <Pane layoutX="58.0" layoutY="10.0" prefHeight="441.0" prefWidth="298.0" styleClass="pane_3" stylesheets="@../assets/css/Pane.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="49.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/modern-conceptual-logo.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="36.0" layoutY="192.0" prefHeight="32.0" prefWidth="207.0" styleClass="Text-Field" stylesheets="@../assets/css/TextFeilds.css">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPassword" layoutX="36.0" layoutY="264.0" onKeyReleased="#txtPasswordOnAction" prefHeight="32.0" prefWidth="207.0" styleClass="Text-Field" stylesheets="@../assets/css/TextFeilds.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="98.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+               <font>
+                  <Font name="Harlow Solid Italic" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="57.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pleses enter details to login">
+               <font>
+                  <Font name="Monotype Corsiva" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="38.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnLogIn" buttonType="RAISED" layoutX="126.0" layoutY="321.0" onAction="#btnLogInOnAction" prefHeight="27.0" prefWidth="110.0" styleClass="button_order" stylesheets="@../assets/css/Button.css" text="Log in">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="pwtxtPassword" layoutX="36.0" layoutY="264.0" onKeyReleased="#pwtxtPasswordOnAction" prefHeight="33.0" prefWidth="207.0" styleClass="Text-Field" stylesheets="@../assets/css/TextFeilds.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="btnVisible" contentDisplay="GRAPHIC_ONLY" layoutX="253.0" layoutY="270.0" onAction="#btnVisibleOnAction" prefHeight="25.0" prefWidth="24.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#131834" glyphName="EYE" wrappingWidth="14.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSetHidden" contentDisplay="GRAPHIC_ONLY" layoutX="253.0" layoutY="270.0" onAction="#btnSetHiddenOnAction" prefHeight="24.0" prefWidth="18.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#131834" glyphName="EYE_SLASH">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label fx:id="txtWelcome" layoutX="497.0" layoutY="148.0" styleClass="text" stylesheets="@../assets/css/Dash.css" text="WELCOME TO HMS">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

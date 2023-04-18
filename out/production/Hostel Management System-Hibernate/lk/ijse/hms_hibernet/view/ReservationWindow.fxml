@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="539.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms_hibernet.controller.ReservationWindowController">
+   <children>
+      <TextField fx:id="txtFirstPayment" layoutX="406.0" layoutY="387.0" onKeyReleased="#txtFirstPayment" prefHeight="31.0" prefWidth="192.0" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="448.0" layoutY="362.0" text="First Payment">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbStudentID" layoutX="42.0" layoutY="99.0" onAction="#cmbStudentIDOnAction" prefHeight="33.0" prefWidth="205.0" stylesheets="@../assets/css/Combo.css" />
+      <Label layoutX="114.0" layoutY="73.0" text="Student ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="811.0" layoutY="83.0" text="Student Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="lblStudentName" fill="#2b0486" fontSmoothingType="LCD" layoutX="724.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tharindu Dhnanushka" textAlignment="CENTER" wrappingWidth="256.205078125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblRes_Id" fill="#2b0486" fontSmoothingType="LCD" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tharindu Dhnanushka" textAlignment="CENTER" wrappingWidth="256.205078125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="103.0" layoutY="16.0" text="Reservation ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="lblDate" fill="#2b0486" fontSmoothingType="LCD" layoutX="723.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023/04/14" textAlignment="CENTER" wrappingWidth="256.205078125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="839.0" layoutY="12.0" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbRoomId" layoutX="42.0" layoutY="176.0" onAction="#cmbRoomIdOnAction" prefHeight="33.0" prefWidth="205.0" stylesheets="@../assets/css/Combo.css" />
+      <Label layoutX="114.0" layoutY="150.0" text="Room ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Pane layoutX="13.0" layoutY="226.0" prefHeight="88.0" prefWidth="977.0" styleClass="pane_10" stylesheets="@../assets/css/Pane.css">
+         <children>
+            <Pane layoutY="41.0" prefHeight="32.0" prefWidth="977.0" stylesheets="@../assets/css/Pane.css">
+               <children>
+                  <Label fx:id="lblRoomId" layoutX="65.0" layoutY="7.0" text="Room ID" textFill="#2d0e9a">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRoomType" layoutX="246.0" layoutY="7.0" text="Room Type" textAlignment="CENTER" textFill="#2d0e9a">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRoomQty" layoutX="456.0" layoutY="7.0" text="Room Qty" textAlignment="CENTER" textFill="#2d0e9a">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAvi_RoomQty" layoutX="641.0" layoutY="7.0" text="Avilable Room Qty" textAlignment="CENTER" textFill="#e42525">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblKeyMoney" layoutX="848.0" layoutY="6.0" text="Key Money" textAlignment="CENTER" textFill="#2d0e9a">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="32.0" prefWidth="977.0" styleClass="pane_9" stylesheets="@../assets/css/Pane.css">
+               <children>
+                  <Label layoutX="65.0" layoutY="7.0" text="Room ID">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="246.0" layoutY="7.0" text="Room Type">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="456.0" layoutY="7.0" text="Room Qty">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="641.0" layoutY="7.0" text="Avilable Room Qty">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="848.0" layoutY="6.0" text="Key Money">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label layoutX="41.0" layoutY="347.0" text="Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="100.0" layoutY="357.0" prefHeight="3.0" prefWidth="286.0" />
+      <Separator layoutX="1.0" layoutY="357.0" prefHeight="3.0" prefWidth="39.0" />
+      <JFXCheckBox fx:id="chkBoxFull" layoutX="93.0" layoutY="393.0" onAction="#chkBoxFullOnAction" text="Full Paid" />
+      <JFXCheckBox fx:id="chkBoxAd" layoutX="200.0" layoutY="393.0" onAction="#chkBoxAdOnAction" text="Advance" />
+      <TextField fx:id="txtRestPayment" editable="false" layoutX="670.0" layoutY="387.0" prefHeight="31.0" prefWidth="192.0" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="712.0" layoutY="362.0" text="Rest Payment">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="406.0" layoutY="445.0" prefHeight="3.0" prefWidth="593.0" />
+      <JFXButton fx:id="btnBookRoom" buttonType="RAISED" layoutX="730.0" layoutY="472.0" onAction="#btnBookRoomOnAction" prefHeight="34.0" prefWidth="120.0" styleClass="button_book" stylesheets="@../assets/css/Button.css" text="Book Room">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="0.36" height="124.785" radius="61.15125" width="121.82" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="873.0" layoutY="472.0" onAction="#btnCancelOnAction" prefHeight="17.0" prefWidth="83.0" styleClass="button_order" stylesheets="@../assets/css/Button.css" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="0.36" height="124.785" radius="61.15125" width="121.82" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

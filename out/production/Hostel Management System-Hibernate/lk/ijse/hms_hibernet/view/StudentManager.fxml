@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="539.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hms_hibernet.controller.StudentManagerController">
+   <children>
+      <TableView fx:id="tblStudent" layoutX="22.0" layoutY="248.0" prefHeight="238.0" prefWidth="951.0" stylesheets="@../assets/css/Table.css">
+        <columns>
+          <TableColumn fx:id="clmStudentId" prefWidth="107.0" text="Student ID" />
+          <TableColumn fx:id="clmF_name" prefWidth="142.0" text="First name" />
+            <TableColumn fx:id="clmL_name" prefWidth="136.0" text="Last Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="201.0" text="Address" />
+            <TableColumn fx:id="clmPhone" prefWidth="169.0" text="Phone Number" />
+            <TableColumn fx:id="clmDob" prefWidth="112.0" text="Dob" />
+            <TableColumn fx:id="clmGender" prefWidth="83.0" text="Gender" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <TextField fx:id="txtStudentId" layoutX="22.0" layoutY="87.0" onKeyReleased="#txtStudentIdOnAction" prefHeight="31.0" prefWidth="192.0" promptText="Sxxxxxxxxx(must 10)" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtF_name" layoutX="237.0" layoutY="87.0" onKeyReleased="#txtF_nameOnAction" prefHeight="31.0" prefWidth="192.0" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtL_name" layoutX="450.0" layoutY="87.0" onKeyReleased="#txtL_nameOnAction" prefHeight="31.0" prefWidth="192.0" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDob" layoutX="661.0" layoutY="87.0" onKeyReleased="#txtDobOnAction" prefHeight="31.0" prefWidth="192.0" promptText="xxxx-xx-xx" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="93.0" layoutY="57.0" text="Student ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="57.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="57.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="57.0" text="Date of birth">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="683.0" layoutY="215.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="79.0" styleClass="button_add" stylesheets="@../assets/css/Button.css" text="ADD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnReset" buttonType="RAISED" layoutX="886.0" layoutY="14.0" onAction="#btnResetOnAction" prefHeight="25.0" prefWidth="79.0" styleClass="button_order2" stylesheets="@../assets/css/Button.css" text="RESET">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="785.0" layoutY="214.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="79.0" styleClass="button_Remove" stylesheets="@../assets/css/Button.css" text="DELETE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="580.0" layoutY="215.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="79.0" styleClass="button_atw" stylesheets="@../assets/css/Dash.css" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtAddress" layoutX="18.0" layoutY="159.0" onKeyReleased="#txtAddressOnAction" prefHeight="31.0" prefWidth="415.0" promptText="(only 0-9 / ,  a to Z)" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="93.0" layoutY="132.0" text="Address">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rBtnMale" layoutX="834.0" layoutY="145.0" onAction="#setGenderOnAction" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rBtnFemale" layoutX="834.0" layoutY="170.0" onAction="#setGenderOnAction" text="Female" toggleGroup="$gender" />
+      <Label layoutX="743.0" layoutY="132.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPhone" layoutX="457.0" layoutY="159.0" onKeyReleased="#txtPhoneOnAction" prefHeight="31.0" prefWidth="192.0" promptText="0xxxxxxxxx(must 10)" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="512.0" layoutY="132.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSelect" buttonType="RAISED" layoutX="894.0" layoutY="490.0" onAction="#btnSelectOnAction" prefHeight="25.0" prefWidth="79.0" styleClass="button_save" stylesheets="@../assets/css/Button.css" text="SELECT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtGender" editable="false" layoutX="703.0" layoutY="159.0" prefHeight="31.0" prefWidth="122.0" styleClass="Text-Field" stylesheets="@../assets/css/CorrectText.css">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="883.0" layoutY="214.0" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="79.0" styleClass="button_pass" stylesheets="@../assets/css/Button.css" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

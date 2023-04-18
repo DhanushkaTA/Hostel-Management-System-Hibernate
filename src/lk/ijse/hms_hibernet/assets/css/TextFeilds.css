@@ -1,0 +1,15 @@
+.Text-Field{
+    -fx-background-color: #CEE1F4;
+    -fx-border-color: #0078D7;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #131834;
+}
+
+.Text-Field:focused{
+    -fx-background-color: #FFC88A;
+    -fx-border-color: #0078D7;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #131834;
+}

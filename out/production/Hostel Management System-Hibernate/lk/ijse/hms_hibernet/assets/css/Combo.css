@@ -1,0 +1,19 @@
+
+.combo-box-base {
+    -fx-background-color:  #FFFF9D;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-selection-bar: #FFE335;
+    -fx-selection-bar-non-focused: #FFFF9D;
+    -fx-border-color: #FCB414;
+    -fx-background-radius:5px 5px 5px 5px;
+    -fx-border-radius: 5px 5px 5px 5px;
+    -fx-cursor: hand;
+}
+/*-fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, */
+
+.combo-box-base_2 {
+    -fx-selection-bar: #FFE335;
+    -fx-selection-bar-non-focused: #FFFF9D;
+    -fx-cursor: hand;
+}

@@ -1,0 +1,65 @@
+.pane{
+    -fx-background-color: linear-gradient(to right,#16D47A,#1CD77D,#1CD987,#1CDA8D,#16D48D,#16CC8A,#0FC487);
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.pane_2{
+    -fx-background-color:linear-gradient(to right,#E65100,#FB8C00) ;
+    -fx-background-radius: 20px  20px  20px  20px;
+    -fx-border-radius: 20px 20px 20px 20px;
+}
+
+.pane_3{
+    /*-fx-background-color: #131834;*/
+    -fx-background-color: linear-gradient(to bottom,#131834,#01D7E2);
+    /*#131834,#01A3B5,#01D7E2*/
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-color: #A6A6A6;
+}
+
+.pane_4{
+    -fx-background-color: #FF9DB0;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-color: #FF1744;
+}
+
+.pane_5{
+    -fx-background-color: linear-gradient(to left,#FFD600,#FFFF00);
+    -fx-background-radius:10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.pane_6{
+    -fx-background-color: linear-gradient(to left,#066A24,#0CC944);
+    -fx-background-radius:10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.pane_7{
+    -fx-background-color: linear-gradient(to left,#363636,#A4A4A4);
+    -fx-background-radius:10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.pane_8{
+    -fx-background-color: linear-gradient(to left,#407B7B,#5CABAB);
+    -fx-background-radius:10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+}
+
+.pane_9{
+    -fx-background-color: #0CC944;
+    -fx-background-radius: 10px 10px 0px 0px;
+    -fx-border-radius: 10px 10px 0px 0px;
+    -fx-border-color: #0CC944;
+}
+
+.pane_10{
+    -fx-background-color: white;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-color: #A6A6A6;
+}
