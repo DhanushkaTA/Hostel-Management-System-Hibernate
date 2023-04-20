@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import sun.misc.UCDecoder;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -15,6 +17,8 @@ import java.util.List;
 @Data
 @ToString
 @Table(name = "room")
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Room implements SuperEntity{
 
     @Id

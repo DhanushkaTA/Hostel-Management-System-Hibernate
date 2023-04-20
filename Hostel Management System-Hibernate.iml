@@ -25,5 +25,6 @@
     <orderEntry type="library" name="AnimateFX-1.2.3" level="project" />
     <orderEntry type="library" name="TrayTester" level="project" />
     <orderEntry type="library" name="fontawesomefx-8.9" level="project" />
+    <orderEntry type="library" name="byte-buddy-1.8.17" level="project" />
   </component>
 </module>

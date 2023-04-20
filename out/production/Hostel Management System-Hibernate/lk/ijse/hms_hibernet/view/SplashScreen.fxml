@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="346.0" fitWidth="657.0" pickOnBounds="true">
          <image>
-            <Image url="@../assets/image/Splash%20window%20background%20image.jpg" />
+            <Image url="@../assets/image/Splash_window_background_image.jpg" />
          </image>
       </ImageView>
       <Rectangle fx:id="rctCon" arcHeight="5.0" arcWidth="5.0" fill="#aaadae" height="7.0" layoutY="339.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="657.0" />
