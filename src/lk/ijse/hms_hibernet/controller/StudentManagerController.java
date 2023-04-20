@@ -3,8 +3,11 @@ package lk.ijse.hms_hibernet.controller;
 import animatefx.animation.Shake;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXRadioButton;
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -53,7 +56,7 @@ public class StudentManagerController {
     public JFXButton btnSelect;
     public TextField txtGender;
     public JFXButton btnClear;
-
+    public JFXTextField txtSearch;
     private Pattern txtTelephonePattern;
     private Pattern dobPattern;
     private Pattern namePattern;
@@ -97,6 +100,7 @@ public class StudentManagerController {
         textFieldList.add(txtDob);
         textFieldList.add(txtAddress);
         textFieldList.add(txtPhone);
+
     }
 
     public void regex() {
@@ -105,8 +109,6 @@ public class StudentManagerController {
         namePattern=Pattern.compile("^[(a-z)(A-Z)]{1,100}$");
         idPattern=Pattern.compile("^[(S)(0-9)]{10}$");
         addressPattern=Pattern.compile("[(,)(/)(0-9)(a-z)(A-Z)]{1,}$");
-        //vNmuber = Pattern.compile("[(A-Z)(0-9)-]{8,}$");
-//        idPattern=Pattern.compile("[(V)(0-9)-]{10,}$");
     }
 
     private void loadDataToTable() {
@@ -128,6 +130,39 @@ public class StudentManagerController {
         ObservableList<StudentTm> obList=
                 FXCollections.observableArrayList(list);
         tblStudent.setItems(obList);
+
+        if (null!=obList){
+            addActionToTextFields(obList);
+        }
+    }
+
+    private void addActionToTextFields(ObservableList<StudentTm> obList) {
+        FilteredList<StudentTm>filteredList=new FilteredList<>(obList,b -> true);
+
+        txtSearch.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredList.setPredicate(studentTm -> {
+                if (newValue.isEmpty() || null==newValue){
+                    return true;
+                }
+                String searchKeyWord=newValue.toLowerCase();
+
+                if (studentTm.getSId().toLowerCase().indexOf(searchKeyWord) > -1){
+                    return true;
+                } else if (studentTm.getF_name().toLowerCase().indexOf(searchKeyWord) > -1) {
+                    return true;
+                } else if (studentTm.getL_name().toLowerCase().indexOf(searchKeyWord) > -1) {
+                    return true;
+                } else if (studentTm.getAddress().toLowerCase().indexOf(searchKeyWord) > -1) {
+                    return true;
+                }else {
+                    return false;
+                }
+            });
+        });
+
+        SortedList<StudentTm>sortedList=new SortedList<>(filteredList);
+        sortedList.comparatorProperty().bind(tblStudent.comparatorProperty());
+        tblStudent.setItems(sortedList);
     }
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
